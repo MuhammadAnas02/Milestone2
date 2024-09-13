@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <h1 id="heading">
+                Resume builder
+            </h1>
+            <form id="resume-form">
+                    <input class="input" type="text" placeholder="enter your name">
+            </form>
+        <form id="resume-form">
+            <input class="input1" type="name" placeholder="enter your father name">
+    </form>
+    <form id="resume-form">
+        <input class="input2" type="number" placeholder="enter your age">
+</form>
+<form id="resume-form1">
+    <label for="gender">Select Gender</label>
+    <br>
+    <select name="gender" id="gender">
+        <option value="">--Select--</option>
+        <option value="female">female</option>
+        <option value="male">Male</option>
+        <option value="rather not to say">rather not to say</option>
+    </select>
+    
+</form>
+    <h1 id="heading">Enter your qualification</h1>
+    <form id="resume-form">
+    <ul>
+        <li><input  class="input3"type="text" placeholder="Matriculation" ></li>
+        <li><input class="input4" type="text" placeholder="Intermidiate"></li>
+        <li><input class="input5" type="text" placeholder="Bechlors"></li>
+    </ul>
+</form>
+<h1 id="heading">Enter your skills</h1>
+<form>
+    <input class="input6" type="text" placeholder="enter">
+</form>
+
+<form id="upload"  action="/upload">
+    <label for="file">Choose a document to upload</label><br> <br>
+    <input  type="file" name="upload" id="uploader" accept=".pdf , .doc ,,docx ,.txt"> <br>
+    <button type="submit" id="upload-button">upload</button>
+</form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Resume Builder</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="container">
+         <div class="forms">
+             
+             <form id="resume-form">
+                <h1 id="heading">Resume Builder</h1>
+                 <input class="input" type="text" placeholder="Enter your name" id="name" required>
+                 <input class="input1" type="text" placeholder="Enter your father's name" id="fatherName" required>
+                 <input class="input2" type="number" placeholder="Enter your age" id="age" required>
+                 <label for="gender">Select Gender:</label>
+                 <select name="gender" id="gender">
+                     <option value="">--Select--</option>
+                     <option value="female">Female</option>
+                     <option value="male">Male</option>
+                     <option value="rather-not-say">Rather Not Say</option>
+                 </select>
+                 <h3>Enter your qualifications</h3>
+                 <input class="input3" type="text" placeholder="Matriculation" id="matriculation" required>
+                 <input class="input4" type="text" placeholder="Intermediate" id="intermediate" required>
+                 <input class="input5" type="text" placeholder="Bachelors" id="bachelors" required>
+                 <h3>Enter your skills</h3>
+                 <input class="input6" type="text" placeholder="Enter skills" id="skills" required>
+                 <button type="submit">Submit</button>
+             </form>
+             <div id="resume-display"></div>
+         </div>
+     </div>
+     <script src="app.js"></script>
+ </body>
+ </html>
+ 
